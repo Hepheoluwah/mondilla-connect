@@ -26,10 +26,10 @@ A modern, responsive SaaS landing page built with React, TypeScript, and Tailwin
 
 ```bash
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/Hepheoluwah/mondilla-connect
 
 # Navigate to project directory
-cd mondilla-connect-showcase
+cd mondilla-connect
 
 # Install dependencies
 npm install
