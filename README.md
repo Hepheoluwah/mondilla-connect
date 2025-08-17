@@ -125,4 +125,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ by [Your Name] - A showcase of modern web development practices for SaaS landing pages.
+Built with ❤️ by Ox_Ifeoluwa - A showcase of modern web development practices for SaaS landing pages.
