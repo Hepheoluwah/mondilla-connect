@@ -6,20 +6,20 @@ export function HeroSection() {
     <section className="min-h-screen pt-16 lg:pt-16 bg-gradient-subtle relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 -left-4 w-72 h-72 gradient-primary rounded-full opacity-10 blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 -right-4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-1/4 -left-4 w-48 h-48 sm:w-72 sm:h-72 gradient-primary rounded-full opacity-10 blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 -right-4 w-64 h-64 sm:w-96 sm:h-96 bg-accent/10 rounded-full blur-3xl animate-float"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-4rem)] py-8 lg:py-0">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center min-h-[calc(100vh-4rem)] py-6 sm:py-8 lg:py-0">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6 lg:space-y-8 text-center lg:text-left"
+            className="space-y-4 sm:space-y-6 lg:space-y-8 text-center lg:text-left"
           >
-            <div className="space-y-4 lg:space-y-6">
+            <div className="space-y-3 sm:space-y-4 lg:space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
             >
               <button className="btn-hero group flex items-center justify-center gap-x-2">
                 Start Free Trial
@@ -71,7 +71,7 @@ export function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-muted-foreground"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-6 lg:space-x-8 text-sm text-muted-foreground"
             >
               <div className="flex items-center space-x-2">
                 <span>✓</span>

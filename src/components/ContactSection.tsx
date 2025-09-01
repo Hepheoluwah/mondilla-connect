@@ -55,7 +55,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 gradient-subtle">
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 gradient-subtle">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.div
@@ -63,84 +63,84 @@ export function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center space-y-6 mb-16"
+          className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             Get in{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               touch
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0">
             Ready to transform your team's collaboration? We're here to help you
             get started with Mondilla Connect.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 max-w-6xl mx-auto">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-6 sm:space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
                 Let's build something amazing
               </h3>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
                 Have questions about Mondilla? Want to see a demo? Our team is
                 here to help you discover how we can transform your development
                 workflow.
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="p-3 gradient-primary rounded-lg">
-                  <Mail className="h-6 w-6 text-white" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="p-2 sm:p-3 gradient-primary rounded-lg">
+                  <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold">Email us</div>
-                  <div className="text-muted-foreground">
+                  <div className="font-semibold text-sm sm:text-base">Email us</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     support@mondilla.io
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4">
-                <div className="p-3 gradient-primary rounded-lg">
-                  <Phone className="h-6 w-6 text-white" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="p-2 sm:p-3 gradient-primary rounded-lg">
+                  <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold">Call us</div>
-                  <div className="text-muted-foreground">+234 702 531 3324</div>
+                  <div className="font-semibold text-sm sm:text-base">Call us</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">+234 702 531 3324</div>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4">
-                <div className="p-3 gradient-primary rounded-lg">
-                  <MapPin className="h-6 w-6 text-white" />
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="p-2 sm:p-3 gradient-primary rounded-lg">
+                  <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold">Visit us</div>
-                  <div className="text-muted-foreground">
+                  <div className="font-semibold text-sm sm:text-base">Visit us</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     Benin City, Edo State, Nigeria
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="pt-8">
-              <h4 className="font-semibold mb-4">Follow us</h4>
-              <div className="flex space-x-4">
+            <div className="pt-6 sm:pt-8">
+              <h4 className="font-semibold text-sm sm:text-base mb-3 sm:mb-4">Follow us</h4>
+              <div className="flex space-x-3 sm:space-x-4">
                 {["Twitter", "LinkedIn", "GitHub"].map((social) => (
                   <a
                     key={social}
                     href="https://x.com/mondilladesigns"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     {social}
                   </a>
