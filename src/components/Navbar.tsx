@@ -21,9 +21,9 @@ export function Navbar() {
             <img 
               src="/image-uploads/68d5c6a5-5b69-40fe-93cf-b9e94ea707d9.png" 
               alt="Mondilla" 
-              className="h-8 w-auto"
+              className="h-6 w-auto sm:h-8"
             />
-            <span className="text-xl font-bold">ondilla</span>
+            <span className="text-lg sm:text-xl font-bold">ondilla</span>
           </div>
 
           {/* Desktop Navigation */}
